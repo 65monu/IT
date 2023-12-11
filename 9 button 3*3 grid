@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Color, Size and Font Changer | Shubhang Gupta</title>
+<link rel="stylesheet" href="prac.css"/>
+<link rel="icon" type="jpg" href="../favicon_octocat.png">
+<script src="prac.js">
+</script>
+</head>
+<body>
+<div class="container">
+<h2>TEXT</h2>
+<div id="text" class="text">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Tempore provident doloremque distinctio cupiditate odit qui amet 
+similique corporis ab deserunt.</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+Cum aut sunt velit adipisci doloremque inventore!</p>
+</div>
+</div>
+<div class="container">
+<div class="buttons">
+<button id="b11" type="button" onclick="b11Function()"
+>Red</button>
+<button id="b12" type="button" onclick="b12Function()"
+>Green</button>
+<button id="b13" type="button" onclick="b13Function()"
+>Blue</button>
+<button id="b21" type="button" onclick="b21Function()"
+>10</button>
+<button id="b22" type="button" onclick="b22Function()"
+>20</button>
+<button id="b23" type="button" onclick="b23Function()"
+>30</button>
+<button id="b31" type="button" onclick="b31Function()"
+>Courier</button>
+<button id="b32" type="button" onclick="b32Function()"
+>Copperplate</button>
+<button id="b33" type="button" onclick="b33Function()"
+>Monaco</button>
+</div>
+</div>
+</body>
+</html>
+CSS FILE:-
+body {
+background-color: rgba(180, 180, 180, 0.932);
+}
+.container {
+margin: 20px auto;
+padding: 15px 25px;
+width: 800px;
+border: 4mm ridge #ff009d;
+}
+.container h2 {
+text-align: center;
+}
+.buttons {
+padding: 10px;
+display: -ms-grid;
+display: grid;
+-ms-grid-rows: auto auto auto;
+grid-template-rows: auto auto auto;
+-ms-grid-columns: auto auto auto;
+grid-template-columns: auto auto auto;
+gap: 20px;
+}
+.buttons button {
+width: 100%;
+padding: 10px;
+font-size: large;
+border-radius: 5px;
+-webkit-box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+.buttons button:hover {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+-webkit-transition: all 0.95s;
+transition: all 0.95s;
+}
+.buttons button:active {
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+-webkit-transition: none;
+transition: none;
+}
+#b11 {
+color: red;
+border: 3px solid red;
+}
+#b12 {
+color: green;
+border: 3px solid green;
+}
+#b13 {
+color: blue;
+border: 3px solid blue;
+}
+#b21 {
+font-size: 10px;
+border: 3px solid black;
+}
+#b22 {
+font-size: 20px;
+border: 3px solid black;
+}
+#b23 {
+font-size: 30px;
+border: 3px solid black;
+}
+#b31 {
+font-family: courier;
+border: 3px solid black;
+}
+#b32 {
+font-family: fantasy;
+border: 3px solid black;
+}
+#b33 {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border: 3px solid black;
+}
+/*# sourceMappingURL=styles.css.map */
+JAVASCRIPT FILE:-
+function b11Function() {
+document.getElementById('text').style = 'color: red;';
+}
+function b12Function() {
+document.getElementById('text').style = 'color: green;';
+}
+function b13Function() {
+document.getElementById('text').style = 'color: blue;';
+}
+function b21Function() {
+document.getElementById('text').style = 'font-size: 10px;';
+}
+function b22Function() {
+document.getElementById('text').style = 'font-size: 20px;';
+}
+function b23Function() {
+document.getElementById('text').style = 'font-size: 30px;';
+}
+function b31Function() {
+document.getElementById('text').style = 'font-family: courier;';
+}
+function b32Function() {
+document.getElementById('text').style = 'font-family: fantasy;';
+}
+function b33Function() {
+document.getElementById('text').style = 'font-family: Verdana, 
+Geneva, Tahoma, sans-serif;';
+}
