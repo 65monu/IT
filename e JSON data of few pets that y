@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pet Details</title>
+<link rel="stylesheet" href="prac.css" />
+</head>
+<body>
+<h1>Pet Data</h1>
+<table id="pets">
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>weight</th>
+<th>Pet type</th>
+<th>Vaccinated</th>
+<th>Likes</th>
+</tr>
+</table>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="prac.js"></script>
+</body>
+</html>
+CSS FILE:-
+body {
+background-color: bisque;
+font-family: 'Oswald', 'Futura', sans-serif;
+margin: 0;
+padding: 0;
+}
+table {
+margin-left: auto;
+margin-right: auto;
+color: #ffffff;
+background-color: darkcyan;
+margin-top: 100px;
+border: 1px solid #000;
+border-collapse: collapse;
+}
+td {
+font-size: large;
+padding: 5px;
+border: 1px solid black;
+}
+th {
+background-color: yellow;
+color: red;
+padding: 5px;
+border: 1px solid black;
+}
+a {
+padding: 10px;
+background-color: pink;
+text-align: center
+}
+h1 {
+margin-top: 50px;
+text-align: center;
+font-weight: bold;
+font-style: normal;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-decoration: underline;
+} 
+JAVASCRIPT FILE:-
+var xhr = new XMLHttpRequest();
+xhr.onload = function() {
+responseObject = JSON.parse(xhr.responseText);
+var allpets = responseObject.pets;
+var newContent = '';
+var $table = $('#pets');
+for(var i = 0; i < allpets.length; i++)
+{
+var pet = allpets[i];
+var $new_row = $("<tr>");
+var $new_cell = $("<td>");
+$new_row.append($new_cell.clone().text(pet.name));
+$new_row.append($new_cell.clone().text(pet.age));
+$new_row.append($new_cell.clone().text(pet.weight));
+$new_row.append($new_cell.clone().text(pet.type));
+$new_row.append($new_cell.clone().text(pet.vaccinated));
+$new_row.append($new_cell.clone().text(pet.likes));
+$table.append($new_row);
+}
+};
+xhr.open('GET','prac.json',true);
+xhr.send(null);
+JASON FILE:-
+{
+"pets": [
+{"name":"belli","age":"4","weight":"18","type":"cat",
+"likes":"She likes to play with wool balls.","vaccinated":true},
+{"name":"tommy","age":"9","weight":"25","type":"dog",
+"likes":"He likes to eat dog food.","vaccinated":false},
+{"name":"kalin","age":"5","weight":"20","type":"dog",
+"likes":"She likes to walk every morning","vaccinated":true},
+{"name":"tiger","age":"11","weight":"35","type":"dog",
+"likes":"He likes to play with Frisbee.","vaccinated":true}
+]
+}
