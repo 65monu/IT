@@ -1,8 +1,0 @@
-ipconfig
-
-IP Addresses : 192.168.1.2 Subnet mask : 255.255.255.0 Network Address : 192.168.1.1
-As, Total no. of IP address on this network = 28 = 256 
-Since, Bit 0 and 255 are reserved for network address and broadcast respectively, 
-then the possible no. of host for this network = 256 – 2 = 254 
-The range of IP addresses that this system has access to. 192.168.1.1 to 192.168.1.254 
- Thus, the maximum number of systems that can be used on this network is. 254
