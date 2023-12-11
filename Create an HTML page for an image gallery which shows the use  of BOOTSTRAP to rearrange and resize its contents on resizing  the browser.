@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Image Gallery with use of Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="prac.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>IMAGE GALLERY</h1>
+<p id="intro">
+rom soaring eagles to hidden insects, Earth's diverse wildlife weaves a tapestry of 
+wonder and complexity, demanding our respect and protection.
+</p>
+<div class="row">
+<div class="col-md-4">
+<div class="thumbnail">
+<img src="lion.jpg" alt="LION" style="height: 200px; width:100%">
+<div class="caption">
+<p>The lion (Panthera leo) is a large cat of the genus Panthera native 
+to
+Africa and India.
+Sun-drenched mane, a king's roar,
+Ruler of the savanna,
+Power in every stride.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="thumbnail">
+<img src="peacock.jpg" alt="PEACOCK" style="height: 200px; width:100%">
+<div class="caption">
+<p>Peacock, also called peafowl
+Feathers like stained glass,
+Fanning out in vibrant display,
+A dance of beauty and pride.
+</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="thumbnail">
+<img src="elephant.jpg" alt="ELEPHANTS" style="height: 200px; width:100%">
+<div class="caption">
+<p>Elephants are the largest existing land animals.
+Trunk that trumpets, tusks like spears,
+Gentle giants, wise and strong,
+Guardians of the savanna's heart.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="thumbnail">
+<img src="panda.jpg" alt="PANDAS" style="height: 200px; width:200px">
+<div class="caption">
+<p>Pandas live mainly in temperate forests high in the mountains of 
+southwest
+China, where they subsist almost entirely on bamboo.
+Black and white bundles of joy,
+Munching bamboo with playful grace,
+Treasures of the bamboo forest.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="thumbnail">
+<img src="horse.jpg" alt="HORSE" style="height: 200px; width:100%">
+<div class="caption">
+<p>Horse, a hoofed herbivorous mammal of the family Equidae.
+Manes like windblown fire,
+Muscles rippling with power,
+A spirit free and untamed.
+</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="thumbnail">
+<img src="deer.jpg" alt="DEER" style="height: 200px; width:200px">
+<div class="caption">
+<p>Deer or true deer are hoofed ruminant mammals forming the family
+Cervidae.
+Gentle hooves through silent woods,
+Eyes wide with startled grace,
+Nature's fleeting elegance.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+CSS FILE:-
+body{
+background-color: coral;
+}
+h1{
+text-align: center;
+background-color: rgb(0, 217, 255);
+font-style: italic;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration: underline;
+font-weight: bold;
+}
+#intro {
+text-align:center;
+color: rgb(0, 114, 146);
+}
