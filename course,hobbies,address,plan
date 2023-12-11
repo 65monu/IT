@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashish Kumar</title>
+<link rel="stylesheet" href="prac.css">
+</head>
+<body>
+<header>
+<h1>Ashish Kumar</h1>
+<img src="Ashish.png.png" alt="Ashish Logo">
+</header>
+<main>
+<h2>About Me</h2>
+<p>
+Hi there! this is Ashish a student, a coding enthusiastic.
+</p>
+<h2>My Course</h2>
+<p>
+All the Courses i have studied till and will study in future for 
+my Bsc.(H) Computer Science Course are listed below:
+<ul>
+<p>Semester I</p>
+<li>Programming in C++</li>
+<li>Computer system and architecture</li>
+<li>Calculas</li>
+<li>Environmental Science</li>
+<p>Semester II</p>
+<li>Programming in Java</li>
+<li>Discrete Structures</li>
+<li>Linear Algebra</li>
+<li>English-A</li>
+<p>Semester III</p>
+<li>Data Structures</li>
+<li>operating System</li>
+<li>Computer Networks</li>
+<li>Programming in python</li>
+<li>Linear Programming And Game Theory</li>
+<p>Semester IV</p>
+<li>Design And Analysis Of Algorithm</li>
+<li>Software Engineering</li>
+<li>Database Management System</li>
+<li>Android Programming</li>
+<li>Element Of Analysis</li>
+<p>Semester V</p>
+<li>Theory Of Computation</li>
+<li>Interner Technologies</li>
+<li>Microprocessor</li>
+<li>Data Analysis And Visualisation</li>
+<p>Semester VI</p>
+<li>Data Mining</li>
+<li>Machine Learning</li>
+<li></li>
+<li></li>
+</ul>
+</p>
+<h2>My Hobbies</h2>
+<ul>
+<li>Reading Novels</li>
+<li>Coding</li>
+<li>watching Movies</li>
+</ul>
+<h2>My Address</h2>
+<p>
+Currently i am living in chirag delhi 110017.
+</p>
+<h2>My Plans</h2>
+<p>
+As of Now there is no any Plan of my own.
+</p>
+</main>
+<footer>
+<p>&copy; all copyrights claimed</p>
+</footer>
+</body>
+</html>
+                                                        CSS FILE:
+body {
+font-family: sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #d82a2a;
+padding: 20px;
+}
+header h1 {
+font-size: 3em;
+margin: 0;
+border-radius: 5px;
+}
+header img {
+margin-top: -75px;
+height: 95px;
+width: 200px;
+float: inline-end;
+}
+main {
+padding: 20px;
+}
+main h2 {
+background-color: aqua;
+margin-top: auto;
+text-align: center;
+font-size: 2em;
+margin-bottom: 10px;
+}
+main p {
+margin-left: 10%;
+font-style: oblique;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+main ul {
+margin-left: 10%;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+main li {
+margin-left: 10%;
+margin-bottom: 10px;
+}
+footer {
+background-color: #f1f1f1;
+padding: 10px;
+text-align: center;
+}
