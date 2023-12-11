@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Information</title>
+<link rel="stylesheet" href="prac.css"/>
+<script src="prac.js"></script>
+<link rel="icon" type="jpg" href="../favicon_octocat.png">
+</head>
+<body>
+<div class="container">
+<u>
+<h1>PET INFORMATION</h1>
+</u>
+<div class="form">
+<form onsubmit="event.preventDefault(); logData();" class="inputgroup">
+<label>Pet's Name*</label>
+<input id="pet_name" type="text" placeholder="Bruno" autofocus
+required size="50">
+<label>Pet's Age*</label>
+<input id="pet_age" type="number" placeholder="In years" required
+size="70">
+<label>Pet's Weight*</label>
+<input id="pet_weight" type="number" placeholder="In Kg" required
+size="70">
+<label>Pet's Type*</label>
+<input id="pet_type" type="text" placeholder="Eg. Dog" required
+size="50">
+<label>Pet's Likes*</label>
+<input id="pet_likes" type="text" placeholder="Walking" required
+size="50">
+<button type="submit" class="button">Register</button>
+</form>
+</div>
+</div>
+</body>
+</html>
+                                                         CSS FILE:-
+body {
+background-color: #ef7c7c;
+}
+.container {
+text-align: center;
+}
+.container .form form {
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+.input-group {
+display: -ms-grid;
+display: grid;
+-ms-grid-rows: (5em)[];
+grid-template-rows: repeat(5, 5em);
+-ms-grid-columns: 25em 25em;
+grid-template-columns: 25em 25em;
+}
+.input-group label {
+color: #fff;
+text-align: center;
+padding-top: 32px;
+font-size: 20px;
+}
+.input-group input {
+height: 25px;
+padding: 5px 10px;
+font-size: 17px;
+margin-top: 25px;
+border-radius: 5px;
+}
+.button {
+-ms-grid-column: 2;
+-ms-grid-column-span: 1;
+grid-column: span 1 / 3;
+margin-left: -60px;
+margin-top: 10px;
+width: -webkit-fit-content;
+width: -moz-fit-content;
+width: fit-content;
+padding: 10px 30px 10px 30px;
+font-size: 18px;
+color: white;
+background: #035b5e;
+border: none;
+border-radius: 5px;
+}
+.button:hover {
+background-color: #00383a;
+}
+.button:active {
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+}
+                                                                                   JAVASCRIPT FILE:-
+function logData() {
+const name = document.getElementById("pet_name").value;
+const age = document.getElementById("pet_age").value;
+const weight = document.getElementById("pet_weight").value;
+const type = document.getElementById("pet_type").value;
+const likes = document.getElementById("pet_likes").value;
+const pet = {
+name: name,
+age: age,
+weight, weight,
+type: type,
+likes: likes
+};
+console.log("Pet Object: ", pet);
+console.log("JSON Object: ", JSON.stringify(pet));
+}
